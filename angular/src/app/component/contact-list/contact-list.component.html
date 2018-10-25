@@ -1,0 +1,11 @@
+<div class="container mt-5">
+  <div class="card-deck">
+    <div class="card w-25 p-3" style="width:50px" *ngFor="let c of contacts">
+      <img class="card-img" style="width:50px" [src]="c.gender=='MALE'?gentLogo:ladyLogo" />
+      <div class="card-body">
+        <h4 class="card-title">{{c.firstName}} {{c.lastName}}</h4>
+        <p class="card-text"> {{c.emailId}} <br /> {{c.mobileNumber}} </p>
+      </div>
+    </div>
+  </div>
+</div>
